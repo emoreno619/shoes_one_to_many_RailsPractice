@@ -1,4 +1,25 @@
 Rails.application.routes.draw do
+  # get 'shoes/index'
+
+  # get 'shoes/new'
+
+  # get 'shoes/show'
+
+  # get 'shoes/edit'
+
+  # get 'people/index'
+
+  # get 'people/new'
+
+  # get 'people/show'
+
+  # get 'people/edit'
+
+  root 'people#index'
+  resources :people do
+    resources :shoes
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
